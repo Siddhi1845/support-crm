@@ -26,7 +26,7 @@ function Dashboard() {
   const fetchTickets = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/tickets"
+        "https://support-crm-472e.onrender.com/api/tickets"
       );
 
       setTickets(res.data);

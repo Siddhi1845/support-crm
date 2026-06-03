@@ -25,7 +25,7 @@ function CreateTicket() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/tickets",
+        "https://support-crm-472e.onrender.com/api/tickets",
         {
           customer_name: user.name,
           customer_email: user.email,

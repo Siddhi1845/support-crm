@@ -21,7 +21,7 @@ function Register() {
   const registerUser = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://support-crm-472e.onrender.com/api/auth/register",
         formData
       );
 

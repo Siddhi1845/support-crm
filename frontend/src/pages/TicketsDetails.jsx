@@ -22,7 +22,7 @@ function TicketsDetails() {
   const fetchTicket = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/tickets/${id}`
+        `https://support-crm-472e.onrender.com/api/tickets/${id}`
       );
 
       setTicket(res.data);
@@ -40,7 +40,7 @@ function TicketsDetails() {
   const saveChanges = async () => {
     try {
       await axios.put(
-        `http://localhost:5000/api/tickets/${id}`,
+        `https://support-crm-472e.onrender.com/api/tickets/${id}`,
         {
           status,
           priority,
@@ -68,7 +68,7 @@ function TicketsDetails() {
 
   try {
     await axios.delete(
-      `http://localhost:5000/api/tickets/${id}`
+      `https://support-crm-472e.onrender.com/api/tickets/${id}`
     );
 
     alert("Ticket Deleted");

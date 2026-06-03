@@ -22,7 +22,7 @@ function App() {
   const fetchTickets = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/tickets"
+        "https://support-crm-472e.onrender.com/api/tickets"
       );
 
       setTickets(response.data);
@@ -38,7 +38,7 @@ function App() {
   const createTicket = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/tickets",
+        "https://support-crm-472e.onrender.com/api/tickets",
         formData
       );
 

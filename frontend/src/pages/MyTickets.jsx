@@ -15,7 +15,7 @@ function MyTickets() {
   const fetchTickets = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/tickets/user/${user.email}`
+        `https://support-crm-472e.onrender.com/api/tickets/user/${user.email}`
         );
 
         setTickets(res.data);
