@@ -23,8 +23,8 @@ function Layout() {
   const location = useLocation();
 
   const user = JSON.parse(
-    localStorage.getItem("user") || "null"
-  );
+  localStorage.getItem("user") || "null"
+);
 
  const isAuthPage =
     location.pathname === "/" ||

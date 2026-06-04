@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 function TicketsDetails() {
   const { id } = useParams();
   const user = JSON.parse(
-    localStorage.getItem("user") || "{}"
+    localStorage.getItem("user") || "null"
   );
   const [ticket, setTicket] = useState(null);
 

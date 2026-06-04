@@ -3,7 +3,7 @@ import axios from "axios";
 
 function CreateTicket() {
   const user = JSON.parse(
-    localStorage.getItem("user") || "{}"
+    localStorage.getItem("user") || "null"
   );
 
   const [formData, setFormData] =
